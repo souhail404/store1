@@ -1,0 +1,1233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'noto kufi arabic' ,sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    background-color: #ffffff;
+}
+.section-ends{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(248, 24, 24);
+}
+
+/* -------------------------------------------------------------------------- */
+/* NAVIGATION BAR STYLING */
+
+nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+}
+nav .nav-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    background-color: #ffffff;
+    box-shadow:  0px 5px 5px rgba(0, 0, 0, 0.305);
+}
+nav .nav-container .menu-burger{
+    width: 50px;
+    height: 50%;
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: solid 1px #a7450d;
+}
+nav .nav-container .menu-burger .divs{
+    width: 27px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+nav .nav-container .menu-burger .divs span{
+    width: 27px;
+    height: 3px;
+    background-color: #a7450d;
+}
+nav .nav-container .logo{
+    width: 250px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: dashed 2px #a7450d;
+
+}
+nav .nav-container .logo p{
+     color: #a7450d;
+}
+nav .nav-container .cart{
+    width: 50px;
+    height: 50%;
+    margin-right: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: solid 1px #a7450d;
+    cursor: pointer;
+}
+nav .nav-container .cart i{
+    font-size: 1.5rem;
+    color: #a7450d;
+}
+
+
+nav .nav-container .cart-bar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 270px;
+    height: 100vh;
+    z-index: -2;
+    transform: translateX(270px);
+    background-color:#eeeeee;
+    transition: all 0.3s ease;
+    box-shadow: -5px 0px 7px rgba(114, 114, 114, 0.301);
+}
+nav .nav-container .cart-bar.active{
+    transform: translateX(0px);
+}
+
+nav .nav-container .menu-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 100vh;
+    z-index: -2;
+    transform: translateX(-270px);
+    background-color:#eeeeee;
+    transition: all 0.3s ease;
+    box-shadow: 5px 0px 7px rgba(114, 114, 114, 0.301);
+}
+nav .nav-container .menu-bar.active{
+    transform: translateX(0px);
+}
+/* NAVIGATION BAR STYLING END */
+/* --------------------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------------------- */
+/* SOCIAL MEDIA BAR STYLING START */
+.social-media{
+    
+    position: sticky;
+    top:0;
+    z-index: 999;
+    background-color: aqua;
+}
+.social-media .social-media-container{
+    position: absolute;
+    right: 0;
+    top: 40vh;
+    height: 200px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.social-media .social-media-container i{
+    font-size: 2.5rem;
+}
+.social-media .social-media-container img{
+    width: 36px;
+    height: 36px;
+}
+.fa-whatsapp-square{
+    color: #00ac3f;
+}
+.fa-facebook-square{
+    color: rgb(33, 30, 190);
+}
+/* SOCIAL MEDIA BAR STYLING END */
+/* --------------------------------------------------------------------------- */
+
+
+
+
+/* --------------------------------------------------------------------------- */
+/* HOME PAGE STYLING START */
+
+.home{
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home .alert{
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 7px 0;
+    background-color: #000000;
+}
+.home .home-container{
+    width: 98%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.home .home-container .left-side{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.home .home-container .left-side img{
+    width: 430px;
+    height: 430px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.584);
+    border-radius: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.home .home-container .right-side{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 5px;
+}
+.home .home-container .right-side h2{
+    font-size:1.6rem;
+    width: 100%;
+    text-align: end;
+    margin-bottom: -5px;
+}
+.home .home-container .right-side .price{
+    font-size:1.5rem;
+    font-weight: 100px;
+    text-align: end;
+    margin-bottom: -35px;
+    color: #a7450d;
+}
+.home .home-container .right-side .price span{
+    font-size:1.2rem;
+    text-align: end;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-decoration: line-through;
+    color: rgba(2, 2, 2, 0.485);
+}
+.home .home-container .right-side .description{
+    font-size:1rem;
+    width: 100%;
+    text-align: end;
+    margin-bottom: -95px;
+    color: rgba(0, 0, 0, 0.805);
+}
+.home .home-container .right-side .reviews{
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: baseline;
+}
+.home .home-container .right-side .reviews .stars{
+    color: rgb(226, 192, 0);
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+.home .home-container .right-side .reviews .stars i{
+    
+    margin-left: -5px;
+}
+.home .home-container .right-side .reviews .txt{
+    font-size:0.8rem;
+    margin-left: 5px;
+}
+.home .home-container .right-side .reviews .txt:hover{
+    font-size:0.8rem;
+    margin-left: 5px;
+    text-decoration:underline ;
+}
+.home .home-container .line{
+    width: 100%;
+    height: 1px;
+    background-color: #4a548c41;
+    margin-top: -50px;
+}
+.home .home-container .right-side .ending-stock{
+    font-size:1rem;
+    width: 100%;
+    padding: 4px 0;
+    background-color: #000000;
+    text-align: center;
+    margin: 7px 0;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    animation: tt 1.2s infinite;
+}
+.home .home-container .right-side .orderbtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .home-container .right-side .orderbtn a{
+    padding: 10px 55px;
+    background-color: #a7450d;
+    color: white;
+    border-radius: 6px;
+    font-weight: 500; 
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.home .home-container .right-side .orderbtn a:hover{
+    background-color: #7e4322;
+   
+}
+.home .home-container .right-side form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.home .home-container .right-side form div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.home .home-container .right-side form div .n1{
+    width: 48%;
+    text-align: end;
+    border: solid 1px rgba(0, 0, 0, 0.449);
+    height: 35px;
+    padding-right: 3px;
+    font-size: 1rem;
+    margin: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+.home .home-container .right-side form .subm{
+    width: 48%;
+    height: 40px;
+    border: none;
+    font-size: 1rem;
+    margin: 5px;
+    background-color: #a7450d;
+    color: #ffffff;
+    border-radius: 6px;
+    font-weight: 500; 
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.home .home-container .right-side form .subm:hover{
+    background-color: #7e4322;
+   
+}
+ /* HOME PAGE STYLING END */
+/* --------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------- */
+ /* DESCRIPTION PAGE STYLING START */
+.description{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom:30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description .description-container{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.description .description-container .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.description .description-container .header span {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.363);
+    margin-bottom: 20px;
+}
+.description .description-container .header p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #a7450d;
+}
+.description .description-container .descs{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.description .description-container .descs2{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.description .description-container .descs img,.description .description-container .descs2 img{
+    width: 380px;
+    margin:20px ;
+    
+}
+.description .description-container .descs p,.description .description-container .descs2 p{
+    text-align: end;
+    
+}
+ /* DESCRIPTION PAGE STYLING END */
+/* --------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------- */
+ /* REVIEWS PAGE STYLING START */
+ .reviews{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom:60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reviews .reviews-container{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.reviews .reviews-container .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.reviews .reviews-container .header span {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.363);
+    margin-bottom: 20px;
+}
+.reviews .reviews-container .header p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #a7450d;
+}
+.reviews .reviews-container .content{
+    width: 85%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    padding: 15px;
+
+}
+.reviews .reviews-container .content .r1{
+   width: 280px;
+   height: 180px;
+   box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(238, 238, 238);
+   margin-bottom: 20px;
+}
+.reviews .reviews-container .content .r1 span{
+    font-size: 1.4rem;
+    font-family: 'Poppins' ,sans-serif;
+    font-weight: 500;
+    color: rgb(226, 192, 0);
+    margin-bottom: 5px;
+ }
+.reviews .reviews-container .content .r1 .stars{
+    color: rgb(226, 192, 0);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+ } 
+
+ .reviews .reviews-container .content .r2{
+    width: 280px;
+    height: 350px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0 15px;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+ }
+ .reviews .reviews-container .content .r2 p{
+     width: 100%;
+     font-size: 1.1rem;
+     
+ }
+ .reviews .reviews-container .content .r2 p i{
+    color: rgb(226, 192, 0);
+
+}
+.reviews .reviews-container .content .r2  span{
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background-color: rgb(153, 153, 153);
+    margin-bottom: 20px;
+}
+.reviews .reviews-container .content .r2  span div{
+    height: 8px;
+    border-radius: 5px;
+    background-color: rgb(226, 192, 0);
+
+}
+.reviews .reviews-container .content .r2  .five div{
+    width: 52%;
+}
+.reviews .reviews-container .content .r2  .four div{
+    width: 28%;
+}
+.reviews .reviews-container .content .r2  .tree div{
+    width: 5%;
+}
+.reviews .reviews-container .content .r2  .two div{
+    width: 1%;
+}
+.reviews .reviews-container .content .r2  .one div{
+    width: 1%;
+}
+
+.reviews .reviews-container .content .l{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.reviews .reviews-container .content .l .rev{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    height: 150px;
+    width: 500px;
+    padding:0 10px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(241, 241, 241);
+    margin-bottom:20px ;
+}
+.reviews .reviews-container .content .l .rev .stars{
+    color: rgb(226, 192, 0);
+}
+.reviews .reviews-container .content .l .rev .date{
+    font-size: 0.7rem;
+}
+.reviews .reviews-container .content .l .rev .name{
+    font-size: 1.3rem;
+}
+.reviews .reviews-container .content .l .rev .v{
+    font-size: 1.2rem;
+}
+
+/* REVIEWS SECTION STYLING ENDS */
+/* ------------------------------------------------------------ */
+
+
+
+
+
+/* ------------------------------------------------------------ */
+/* FOOTER STYLING START */
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color:#a7450d ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+footer span{
+    height: 20px;
+    width: 1px;
+    background-color: white;
+    margin:0  10px;
+}
+footer a{
+    color: white;
+    text-decoration: underline;
+}
+/* FOOTER STYLING END */
+/* ------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+/* -------------------------------------------- */
+/* responsivity */
+@media (max-width:1000px) {
+    .home .alert{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .home .home-container .left-side img{
+        width: 350px;
+        height: 350px;
+    }
+    .home .home-container .right-side h2{
+        font-size:1.4rem;
+    }
+    .home .home-container .right-side .price{
+        font-size:1.3rem;
+    }
+    .home .home-container .right-side .price span{
+        font-size:1.1rem;
+        margin-right: 5px;
+    }
+    .home .home-container .right-side .description{
+        font-size:0.9rem;
+        
+    }
+    .home .home-container .right-side .reviews{
+        width: 100%;
+        display: flex;
+        justify-content:flex-end;
+        align-items: baseline;
+    }
+    .home .home-container .right-side .reviews .stars{
+        color: rgb(226, 192, 0);
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
+    /* --------------------------------------------------- */
+    .social-media .social-media-container{
+        height: 180px;
+        width: 50px;
+    }
+    .social-media .social-media-container i{
+        font-size: 2.1rem;
+    }
+    .social-media .social-media-container img{
+        width: 30px;
+        height: 30px;
+    }
+    /* --------------------------------------------------- */
+    .description .description-container .descs,.description .description-container .descs2{
+        width: 85%;
+    }
+    .description .description-container .descs img,.description .description-container .descs2 img{
+        width: 300px;
+    }
+    /* --------------------------------------------------- */
+    .reviews .reviews-container .content{
+        width: 90%;
+        padding: 10px;
+    
+    }
+    .reviews .reviews-container .content .r1{
+       width: 200px;
+    }
+    .reviews .reviews-container .content .r1 span{
+        font-size: 1.35rem;
+     }
+    .reviews .reviews-container .content .r1 .stars{
+        font-size: 1.3rem;
+     } 
+    
+     .reviews .reviews-container .content .r2{
+        width: 200px;
+     }
+    .reviews .reviews-container .content .l .rev{
+        width: 450px;
+    }
+}
+
+
+
+@media (max-width:800px) {
+    .home .alert{
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+    .home .home-container .left-side img{
+        width: 320px;
+        height: 320px;
+    }
+    .home .home-container .right-side h2{
+        font-size:1.3rem;
+    }
+    .home .home-container .right-side .price{
+        font-size:1.25rem;
+    }
+    .home .home-container .right-side .price span{
+        font-size:1.1rem;
+        margin-right: 2px;
+    }
+    .home .home-container .right-side .description{
+        font-size:0.85rem;
+        
+    }
+    .home .home-container .right-side .reviews .stars{
+        font-size: 1.2rem;
+    }
+    .home .home-container .right-side .ending-stock{
+        font-size:0.7rem;
+    }
+    .home .home-container .right-side form div .n1{
+        width: 50%;
+        height: 27px;
+        font-size: 0.85rem;
+        margin: 5px;
+        border-radius: 4px;
+    }
+    .home .home-container .right-side form .subm{
+        width: 50%;
+        height: 30px;
+        font-size: 0.85rem;
+        border-radius: 4px;
+    }
+    /* --------------------------------------------------- */
+    .social-media .social-media-container{
+        height: 160px;
+        width: 45px;
+    }
+    .social-media .social-media-container i{
+        font-size: 1.9rem;
+    }
+    .social-media .social-media-container img{
+        width: 28px;
+        height: 28px;
+    }
+    /* --------------------------------------------------- */
+    .description .description-container .descs,.description .description-container .descs2{
+        width: 90%;
+    }
+    .description .description-container .descs img,.description .description-container .descs2 img{
+        width: 280px;
+    }
+    /* --------------------------------------------------- */
+    .reviews .reviews-container .content{
+        width: 90%;
+        padding: 10px;
+    
+    }
+    .reviews .reviews-container .content .r1{
+       width: 200px;
+    }
+    .reviews .reviews-container .content .r1 span{
+        font-size: 1.35rem;
+     }
+    .reviews .reviews-container .content .r1 .stars{
+        font-size: 1.3rem;
+     } 
+    
+     .reviews .reviews-container .content .r2{
+        width: 200px;
+     }
+    .reviews .reviews-container .content .l .rev{
+        width: 350px;
+    }
+}
+
+
+
+@media (max-width:740px) {
+    .home{
+        padding-bottom: 20px;
+    }
+    .home .alert{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .home .home-container .left-side img{
+        width: 290px;
+        height: 290px;
+    }
+    .home .home-container .right-side h2{
+        font-size:1.2rem;
+    }
+    .home .home-container .right-side .price{
+        font-size:1.2rem;
+    }
+    .home .home-container .right-side .price span{
+        font-size:1rem;
+        margin-right:0px;
+    }
+
+}
+
+@media (max-width:650px) {
+    nav .nav-container .logo{
+        width: 180px;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: dashed 2px #a7450d;
+    
+    }
+    .home .home-container{
+        width: 99%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .home .home-container .left-side{
+        width: 100%;
+    }
+    .home .home-container .left-side img{
+        width: 330px;
+        height: 330px;
+    }
+    
+    .home .home-container .right-side{
+        width: 100%;
+        padding-right: 45px;
+        padding-left: 10px;
+        padding-top: 15px;
+
+    }
+    .home .home-container .right-side h2{
+        font-size:1.6rem;
+        
+    }
+    .home .home-container .right-side .price{
+        font-size:1.5rem;
+    }
+    .home .home-container .right-side .price span{
+        font-size:1.2rem;
+        margin-right: 5px;
+    }
+    .home .home-container .right-side .description{
+        font-size:1rem;
+    }
+    .home .home-container .right-side .reviews .stars{
+        font-size: 1.4rem;
+        margin-bottom:35px;
+    }
+    .home .home-container .right-side .ending-stock{
+        font-size:1rem;
+        width: 100%;
+        padding: 4px 0;
+        background-color: #000000;
+        text-align: center;
+        margin: 7px 0;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        animation: tt 1.2s infinite;
+    }
+    .home .home-container .right-side .orderbtn{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home .home-container .right-side .orderbtn a{
+        padding: 10px 55px;
+        background-color: #a7450d;
+        color: white;
+        border-radius: 6px;
+        font-weight: 500; 
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    .home .home-container .right-side .orderbtn a:hover{
+        background-color: #7e4322;
+       
+    }
+    .home .home-container .right-side form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .home .home-container .right-side form div{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .home .home-container .right-side form div .n1{
+        width: 48%;
+        text-align: end;
+        border: solid 1px rgba(0, 0, 0, 0.449);
+        height: 35px;
+        padding-right: 3px;
+        font-size: 1rem;
+        margin: 8px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+    }
+    .home .home-container .right-side form .subm{
+        width: 48%;
+        height: 40px;
+        border: none;
+        font-size: 1rem;
+        margin: 5px;
+        background-color: #a7450d;
+        color: #ffffff;
+        border-radius: 6px;
+        font-weight: 500; 
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    .home .home-container .right-side form .subm:hover{
+        background-color: #7e4322;
+       
+    }
+    .description{
+        padding-bottom: 10px;
+    }
+    .description .description-container .descs{
+        width: 100%;
+        padding-right: 45px;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .description .description-container .descs2{
+        width: 100%;
+        padding-right: 45px;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;  
+    }
+    .description .description-container .descs2 p{
+        margin-bottom: 20px;  
+    }    
+    /* ---------------------------------------------------------------------- */
+    .reviews .reviews-container .content{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: flex-start;
+        padding: 8px;
+        padding-right: 43px;
+        padding-top: 30px;
+        flex-direction: column-reverse;
+    }
+    .reviews .reviews-container .content .r{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+    .reviews .reviews-container .content .r1{
+       width: 36%;
+       height: 200px;
+       box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+    .reviews .reviews-container .content .r1 span{
+        font-size: 0.9rem;
+        margin-bottom: 3.5px;
+     }
+    .reviews .reviews-container .content .r1 .stars{
+        font-size: 0.7rem;
+        margin-bottom: 8px;
+        
+     }
+     .reviews .reviews-container .content .r1  p{
+         font-size: 0.7rem;
+     }
+    
+     .reviews .reviews-container .content .r2{
+        width:60%;
+        height: 200px;
+        padding:0 12px;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+     }
+     .reviews .reviews-container .content .r2 p{
+         font-size: 0.7rem;
+     }
+     .reviews .reviews-container .content .r2  span{
+        width: 100%;
+        height: 4px;
+        border-radius: 5px;
+        background-color: rgb(153, 153, 153);
+        margin-bottom: 10px;
+    }
+    .reviews .reviews-container .content .r2  span div{
+        height: 4px;
+        border-radius: 5px;
+        background-color: rgb(226, 192, 0);
+    
+    }
+    .reviews .reviews-container .content .l{
+        margin-right: 30px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;   
+    }
+    .reviews .reviews-container .content .l .rev{
+        height: 110px;
+        width: 100%;
+        padding:0 10px;
+        position: relative;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+    .reviews .reviews-container .content .l .rev .date{
+        font-size: 0.6rem;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+    }
+    .reviews .reviews-container .content .l .rev .name{
+        font-size: 1.1rem;
+    }
+    .reviews .reviews-container .content .l .rev .v{
+        font-size: 1rem;
+    }
+    .reviews{
+        padding-bottom:20px;
+    }
+    footer{
+        height: 60px;
+    }
+    footer p{
+        font-size: 0.8rem;
+       
+    }
+}
+@media (max-width:500px) {
+    footer{
+        height: 50px;
+    }
+    footer p{
+        font-size: 0.65rem;
+    }
+    .description .description-container .header p {
+        font-size: 1.2rem;
+        
+    }
+    .reviews .reviews-container .header p {
+        font-size: 1.2rem;
+       
+    }
+
+    
+}
+
+@media (max-width:450px) {
+    footer{
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer p{
+        font-size: 0.6rem;
+        margin-bottom:3px;
+    }
+    footer span{
+        display: none;
+    }
+    .social-media .social-media-container{
+        width: 35px;
+        height: 150px;
+    }
+    .social-media .social-media-container i{
+        font-size: 1.5rem;
+    }
+    .social-media .social-media-container img{
+        width: 22px;
+        height: 22px;
+    }
+    .home .home-container .right-side{
+        padding-right: 30px;
+        padding-left: 5px;
+    }
+    .description .description-container .descs{
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 5px;
+        
+    }
+    .description .description-container .descs2{
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 5px;
+        
+    }
+    .description .description-container .descs p{
+         font-size: 0.9rem;
+    }
+    .description .description-container .descs2 p{
+        font-size: 0.9rem;
+   }
+   .reviews .reviews-container .content{
+    padding: 4px;
+    padding-right: 30px;
+}
+.reviews .reviews-container .content .l{
+    margin-right: 0px;  
+}
+.reviews .reviews-container .content .l .rev{
+    height: 90px;
+    width: 100%;
+    padding:0 8px;
+    position: relative;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.reviews .reviews-container .content .l .rev .date{
+    font-size: 0.6rem;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+.reviews .reviews-container .content .l .rev .name{
+    font-size: 0.9rem;
+}
+.reviews .reviews-container .content .l .rev .stars{
+    font-size: 0.6rem;
+}
+.reviews .reviews-container .content .l .rev .v{
+    font-size: 0.9rem;
+}
+.home .alert{
+    
+    font-size: 0.7rem;
+    
+}
+.home .home-container .left-side img{
+    width: 250px;
+    height: 250px;
+}
+
+
+.home .home-container .right-side h2{
+    font-size:1.1rem;
+   
+}
+.home .home-container .right-side .price{
+    font-size:1.1rem;
+}
+.home .home-container .right-side .price span{
+    font-size:0.9rem;
+    margin-right: 0px;
+    
+}
+.home .home-container .right-side .description{
+    font-size:0.9rem;
+    margin-bottom: -80px;
+}
+
+.home .home-container .right-side .reviews .stars{
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+.home .home-container .right-side .reviews .txt{
+    font-size:0.75rem;
+}
+.home .home-container .right-side .reviews .txt:hover{
+    font-size:0.75rem;
+    
+}
+.home .home-container .right-side .ending-stock{
+    font-size:0.7rem;
+    width: 100%;
+    padding: 4px 0;
+    background-color: #000000;
+    text-align: center;
+    margin: 7px 0;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    animation: tt 1.2s infinite;
+}
+.home .home-container .right-side form div .n1{
+    width: 50%;
+    text-align: end;
+    border: solid 1px rgba(0, 0, 0, 0.449);
+    height: 28px;
+    padding-right: 3px;
+    font-size: 0.8em;
+    margin: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+.home .home-container .right-side form .subm{
+    width:50%;
+    height: 28px;
+    border: none;
+    font-size: 0.8rem;
+    margin: 5px;
+    border-radius: 3px;
+    
+}
+}
+
+@media (max-width:350px) {
+    .home .home-container .left-side img{
+        width: 210px;
+        height: 210px;
+    }
+    .home .home-container .right-side h2{
+        font-size:1rem;
+       
+    }
+    .home .home-container .right-side .description{
+        font-size:0.8rem;
+        margin-bottom: -80px;
+    }
+}
